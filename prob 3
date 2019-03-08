@@ -13,7 +13,7 @@ int main()
 	double monthlyrate;
 	double avedailybal;
 
-    cout << setprecision(2) << fixed << showpoint ;
+   
     cout << "Enter net Balance: ";
     cin >> netbal;
     cout << "Enter payment made: ";
