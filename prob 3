@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    double netbal;
+   double netbal;
 	double d1;
 	double payment;
 	double interest;
@@ -13,8 +13,7 @@ int main()
 	double monthlyrate;
 	double avedailybal;
 
-
-    
+    cout << setprecision(2) << fixed << showpoint ;
     cout << "Enter net Balance: ";
     cin >> netbal;
     cout << "Enter payment made: ";
@@ -26,10 +25,10 @@ int main()
     cout  << "Enter interest per month: ";
     cin >> monthlyrate;
 
-    cout<< "Average Daily Balance: " << (netbal * d1 - payment * d2)/d1 << endl;
-	cout << "Interest is " << avedailybal * monthlyrate << endl;
-	cin >> interest;
+    avedailybal = (netbal * d1 - payment * d2)/d1;
+    interest = avedailybal * monthlyrate;
 
+    cout << "Interest is " << avedailybal * monthlyrate << endl;
 	_getch();
     return 0;
 }
