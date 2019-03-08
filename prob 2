@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	float gram;
+	float density; 
+	float volume;
+
+		cout << "Input the mass in grams: " << endl;
+		cin >> gram;
+		cout << "Input the density in grams per cubic centimeter: " << endl;
+		cin >> density;
+		cout << "The volume: " << density / gram << endl;
+		cout << setprecision(2) << density / gram << endl;
+
+
+	_getch();
+    return 0;
+}
