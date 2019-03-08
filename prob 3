@@ -29,6 +29,7 @@ int main()
     interest = avedailybal * monthlyrate;
 
     cout << "Interest is " << avedailybal * monthlyrate << endl;
+    cout << setprecision(3) << avedailybal * monthlyrate << endl;
 	_getch();
     return 0;
 }
